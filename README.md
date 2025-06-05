@@ -37,6 +37,45 @@ After installation, these packages should be imported together with the other ne
 
 ### Sentinel-2 Data
 
+Sentinel-2 is a satellite mission launched by the European Space Agency (ESA) as part of the Copernicus program, aimed at delivering high-resolution optical imagery for land monitoring purposes. It collects data in 13 spectral bands spanning from visible light to shortwave infrared, with spatial resolutions of 10, 20, or 60 meters depending on the specific band. This research utilizes Level-2A (L2A) products, which have undergone atmospheric correction to provide Bottom-Of-Atmosphere (BOA) reflectance, derived from Level-1C Top-Of-Atmosphere (TOA) images (European Space Agency, date not specified). Because the shortwave infrared (SWIR) bands needed in this study are unavailable at the 10-meter resolution, all spectral bands are processed at 20-meter resolution to maintain uniformity. To fetch the data, you must create an account on the Copernicus Open Access Hub and input your login credentials in the "Fetching Data" section of the code.
+
+```python
+# Authenticate with Copernicus Data Space
+username = "zcfbgub@ucl.ac.uk" # Change to your username
+password = "20030526Gyl!" # Change to your password
+access_token, refresh_token = get_access_and_refresh_token(username, password)
+
+# Define Time Ranges for Pre- and Post-earthquake
+pre_eq_start_date = "2023-01-05"
+pre_eq_end_date = "2023-01-06"
+post_eq_start_date = "2023-08-05"
+post_eq_end_date = "2023-08-06"
+
+# Query Sentinel-2 Products Covering 2023 TurkeySyria Earthquake Affected Area
+pre_eq_sentinel2_data = query_sentinel2_TurkeySyria_data(
+    pre_eq_start_date, pre_eq_end_date, access_token
+)
+
+post_eq_sentinel2_data = query_sentinel2_TurkeySyria_data(
+    post_eq_start_date, post_eq_end_date, access_token
+)
+
+# Download the Selected Sentinel-2 Product for Each Time Range
+download_dir = "/content/drive/MyDrive/AI/Week 10/"
+
+# Download Pre-Earthquake Product
+product_id = pre_eq_sentinel2_data['Id'][0]
+file_name = pre_eq_sentinel2_data['Name'][0]
+download_single_product(product_id, file_name, access_token, download_dir)
+
+# Download Post-Earthquake Product
+product_id = post_eq_sentinel2_data['Id'][0]
+file_name = post_eq_sentinel2_data['Name'][0]
+download_single_product(product_id, file_name, access_token, download_dir)
+```
+
+We can use the code above to download the file. The downloaded file will be in ZIP format. To access the data, unzip the file in the directory where it was saved.
+
 ## Data Alignment
 
 ## Normalised Difference Vegetation Index (NDVI) Mask
