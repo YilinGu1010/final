@@ -28,9 +28,10 @@ This project was carried out using Google Colab, which offers free GPU access an
 
 Before starting the project in Google Colab, the rasterio package needs to be installed to enable reading, writing, and analysis of geospatial raster data. Additionally, to estimate the project's carbon emissions, the codecarbon package must also be installed.
 
-‘’‘
+```python
 !pip install rasterio
 !pip install codecarbon
+```
 
 After installation, these packages should be imported together with the other necessary libraries. If running the project locally, make sure all dependencies are correctly installed.
 
