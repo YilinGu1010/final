@@ -10,7 +10,7 @@ This project serves as the final assignment for GEOL0069: Artificial Intelligenc
 
 ### Background
 
-Landslides are destructive natural events frequently triggered by earthquakes or intense rainfall, posing serious risks to infrastructure and human life. Prompt and accurate identification of areas affected by landslides is essential for effective post-disaster response. Additionally, landslide scars can play a crucial role in informing hydrogeological models used to evaluate slope stability (Montgomery & Dietrich, 1994). Satellite-based remote sensing provides a powerful means of monitoring vast or hard-to-access regions, with optical imagery offering valuable spectral data for detecting vegetation depletion and surface disruption. In particular, the Sentinel-2 satellite, known for its high-resolution multispectral capabilities, is particularly well-suited for mapping landslide events.
+Landslides are destructive natural events frequently triggered by earthquakes or intense rainfall, posing serious risks to infrastructure and human life. Prompt and accurate identification of areas affected by landslides is essential for effective post-disaster response. Additionally, landslide scars can play a crucial role in informing hydrogeological models used to evaluate slope stability (Montgomery & Dietrich, 1994)(Karakas et al,. 2024)(Görüm et al,. 2023)(Heidarzadeh et al,. 2023). Satellite-based remote sensing provides a powerful means of monitoring vast or hard-to-access regions, with optical imagery offering valuable spectral data for detecting vegetation depletion and surface disruption. In particular, the Sentinel-2 satellite, known for its high-resolution multispectral capabilities, is particularly well-suited for mapping landslide events.
 
 On February 6, 2023, a magnitude 7.8 earthquake struck the border region between Turkey and Syria, triggering over 2,596 landslides (Kocaman, Sultan, et al., 2025). Landslides can lead to secondary disasters, causing some great damages. Assessing landslide risk in the surrounding areas is therefore of critical importance. This project focuses on the epicentral region, where landslides are densely concentrated. Moreover, the selected area features very low cloud cover in both pre- and post-earthquake Sentinel-2 imagery, providing favorable conditions for conducting this analysis.
 
@@ -140,13 +140,35 @@ To complement these quantitative evaluations, all predicted landslide masks were
 
 ## Conclusion
 
-
-
-## Video Tutorial
-
-
+The results show that using three groups in K-means and GMM helps better tell apart vegetation and bare soil. However, when it comes to finding landslide scars by comparing images from before and after the earthquake, all the methods work pretty well and give similar results. This means that unsupervised learning is a useful and efficient way to detect landslide scars without needing detailed prior knowledge about the local plants. So, depending on what you want to do, you can choose the number of groups: for spotting landslides over time, two groups are enough, but for better separating soil and plants in a single image, using three groups works better.
 
 ## References
+
+Kocaman, S., Çetinkaya, S., TUNAR ÖZCAN, N.A.Z.L.I., Karakaş, G., Karakaş, V.E. and Gökçeoğlu, C., 2025. Landslides triggered by the 6 February 2023 Kahramanmaraş earthquakes (Türkiye). Turkish Journal of Earth Sciences, 34(1), pp.47-67.
+
+MacQueen, J., 1967, January. Some methods for classification and analysis of multivariate observations. In Proceedings of the Fifth Berkeley Symposium on Mathematical Statistics and Probability, Volume 1: Statistics (Vol. 5, pp. 281-298). University of California press.
+
+Wang, Y., Su, J., Zhai, X., Meng, F. and Liu, C., 2022. Snow coverage mapping by learning from sentinel-2 satellite multispectral images via machine learning algorithms. Remote Sensing, 14(3), p.782.
+
+Montgomery, D.R. and Dietrich, W.E., 1994. A physically based model for the topographic control on shallow landsliding. Water resources research, 30(4), pp.1153-1171.
+
+Ding, Z. and Wang, C., 2025. Coseismic landslides caused by the 2022 Luding earthquake in China: insights from remote sensing interpretations and machine learning models. Frontiers in Earth Science, 13, p.1564744.
+
+KRIEGLER, F.J., 1969. Preprocessing transformations and their effects on multspectral recognition. In Proceedings of the sixth international symposium on remote sesning of environment (pp. 97-131).
+
+Saito, H., Uchiyama, S. and Teshirogi, K., 2022. Rapid vegetation recovery at landslide scars detected by multitemporal high-resolution satellite imagery at Aso volcano, Japan. Geomorphology, 398, p.107989.
+
+Yunus, A.P., Fan, X., Tang, X., Jie, D., Xu, Q. and Huang, R., 2020. Decadal vegetation succession from MODIS reveals the spatio-temporal evolution of post-seismic landsliding after the 2008 Wenchuan earthquake. Remote Sensing of Environment, 236, p.111476.
+
+Yang, W., Wang, Y., Sun, S., Wang, Y. and Ma, C., 2019. Using Sentinel-2 time series to detect slope movement before the Jinsha River landslide. Landslides, 16, pp.1313-1324.
+
+Karakas, G., Unal, E.O., Cetinkaya, S., Ozcan, N.T., Karakas, V.E., Can, R., Gokceoglu, C. and Kocaman, S., 2024. Analysis of landslide susceptibility prediction accuracy with an event-based inventory: The 6 February 2023 Turkiye earthquakes. Soil Dynamics and Earthquake Engineering, 178, p.108491.
+
+Görüm, T., Tanyas, H., Karabacak, F., Yılmaz, A., Girgin, S., Allstadt, K.E., Süzen, M.L. and Burgi, P., 2023. Preliminary documentation of coseismic ground failure triggered by the February 6, 2023 Türkiye earthquake sequence. Engineering Geology, 327, p.107315.
+
+Heidarzadeh, M., Gusman, A.R. and Mulia, I.E., 2023. The landslide source of the eastern Mediterranean tsunami on 6 February 2023 following the Mw 7.8 Kahramanmaraş (Türkiye) inland earthquake. Geoscience letters, 10(1), p.50.
+
+## Video Tutorial
 
 
 
