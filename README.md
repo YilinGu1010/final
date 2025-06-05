@@ -135,8 +135,8 @@ To complement these quantitative evaluations, all predicted landslide masks were
 ![Image Alt](https://github.com/YilinGu1010/final/blob/3cb64871fc0320deae76c8512848dd35cbcb77d3/Summary.png)
 *Confusion matrices for each model*
 
-![Image Alt]()
-**
+![Image Alt](https://github.com/YilinGu1010/final/blob/d8aaa5a19c4718899e570bcd4b20a6e351b21061/six.png)
+*Post-earthquake true-color images accompanied by classification overlays are presented in six panels: (1) the original post-earthquake true-color image, (2) the landslide mask derived from NDVI, (3) results of K-means clustering with two clusters, (4) K-means clustering using three clusters, (5) Gaussian Mixture Model (GMM) clustering with two components, and (6) GMM clustering with three components.*
 
 ## Conclusion
 
