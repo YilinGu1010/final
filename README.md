@@ -116,11 +116,11 @@ Gaussian Mixture Models (GMMs) are a type of probabilistic model that assume the
 
 In this project, GMMs were used to classify landslide scars by clustering NDVI and Bare Soil Index (BSI) values derived from Sentinel-2 satellite imagery collected before and after the earthquake event. The model was tested with two different numbers of components — two and three — to investigate whether increasing the number of mixture components could improve the classification accuracy. By allowing more components, the model may better capture subtle variations in the spectral indices caused by vegetation changes and soil exposure, thus enhancing the distinction between landslide-affected and unaffected areas. This approach aimed to overcome the limitations of traditional threshold-based methods by providing a more flexible, data-driven means of identifying landslide scars without requiring prior knowledge of the local environment.
 
-![Image Alt]()
-* *
+![Image Alt](https://github.com/YilinGu1010/final/blob/7c91a5823163dd006b9996f215664c02a406a301/GMM2.png)
+*Landslide scar detection using Gaussian Mixture Model (GMM) clustering with two components.*
 
 ![Image Alt]()
-* *
+*Landslide scar detection using Gaussian Mixture Model (GMM) clustering with three components.*
 
 ## Performance Analysis
 
