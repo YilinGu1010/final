@@ -6,3 +6,5 @@ This project employs unsupervised learning techniques, specifically K-means and 
 
 
 ## About the project
+
+This project serves as the final assignment for GEOL0069: Artificial Intelligence for Earth Observation. It investigates the application of unsupervised learning techniques—namely K-means clustering and Gaussian Mixture Models (GMM)—to detect landslide scars using pre- and post-earthquake Sentinel-2 optical imagery. The full code implementation can be found in the notebook titled AI4EO_Final_Project.ipynb
