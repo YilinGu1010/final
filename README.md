@@ -180,7 +180,3 @@ Görüm, T., Tanyas, H., Karabacak, F., Yılmaz, A., Girgin, S., Allstadt, K.E.,
 
 Heidarzadeh, M., Gusman, A.R. and Mulia, I.E., 2023. The landslide source of the eastern Mediterranean tsunami on 6 February 2023 following the Mw 7.8 Kahramanmaraş (Türkiye) inland earthquake. Geoscience letters, 10(1), p.50.
 
-## Video Tutorial
-
-[![cilck here for the video](https://www.youtube.com/watch?v=an6S5G1iEWc)
-
