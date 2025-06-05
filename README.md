@@ -140,7 +140,7 @@ To complement these quantitative evaluations, all predicted landslide masks were
 
 ## Environmental Cost Assessment
 
-To estimate the carbon footprint of this project, the codecarbon package was integrated at the very beginning of the workflow to continuously monitor and record the energy consumption during each stage of the process. The results of this monitoring indicate that the entire workflow emitted approximately 1.659 kilograms of carbon dioxide (CO2) and consumed around 0.011958 kilowatt-hours (kWh) of electricity.
+To estimate the carbon footprint of this project, the codecarbon package was integrated at the very beginning of the workflow to continuously monitor and record the energy consumption during each stage of the process. The results of this monitoring indicate that the entire workflow emitted approximately 1.659 grams of carbon dioxide (CO2) and consumed around 0.011958 kilowatt-hours (kWh) of electricity.
 
 For context, it is useful to compare these emissions with common sources of carbon output. According to the Greenhouse Gas Reporting: Conversion Factors 2022, published by the Department for Energy Security and Net Zero along with the Department for Business, Energy & Industrial Strategy, a typical petrol-fueled car releases about 170 grams of CO2 for every kilometre driven, while a domestic flight emits roughly 246 grams of CO2 per kilometre traveled. This comparison highlights how relatively low the emissions from this computational project are, which can largely be attributed to its modest computational requirements and the fact that it was executed on a CPU-based runtime environment within Google Colab, a cloud platform optimized for efficient resource use.
 
