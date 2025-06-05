@@ -105,12 +105,22 @@ K-means clustering is a widely used unsupervised machine learning algorithm desi
 In this project, K-means clustering was employed to distinguish landslide-affected areas from unaffected regions using NDVI and BSI indices calculated from Sentinel-2 images captured before and after the earthquake. Two different clustering scenarios were explored: one with two clusters and another with three clusters. The purpose of testing these scenarios was to evaluate if introducing an additional cluster could enhance the classification accuracy, especially by minimizing the errors where vegetation with variable reflectance might be mistakenly classified as bare soil.
 
 ![Image Alt](https://github.com/YilinGu1010/final/blob/20db79bb2a233bdb50793147564d901224bcf002/K-Mean2.png)
-* *
+*Landslide scar detection using K-means clustering with two clusters.*
   
+![Image Alt](https://github.com/YilinGu1010/final/blob/a150236ba28b781536ef4b747c6d6763640be6c0/K-Mean3.png)
+*Landslide scar detection using K-means clustering with three clusters.*
+
+### Gaussian Mixture Models (GMM)
+
+Gaussian Mixture Models (GMMs) are a type of probabilistic model that assume the data is generated from a combination of several Gaussian (normal) distributions, each representing a subpopulation within the overall dataset. Each Gaussian component is defined by its own mean vector and covariance matrix, allowing the model to capture variations in data spread and orientation (Reynolds, 2009). Unlike simpler clustering algorithms such as K-means, which assign data points to hard clusters based solely on distance to centroids, GMMs perform soft clustering by estimating the probability that each data point belongs to each Gaussian component. This flexibility allows GMMs to model clusters with different shapes, sizes, and degrees of overlap, making them well-suited for complex datasets with mixed or overlapping classes.
+
+In this project, GMMs were used to classify landslide scars by clustering NDVI and Bare Soil Index (BSI) values derived from Sentinel-2 satellite imagery collected before and after the earthquake event. The model was tested with two different numbers of components — two and three — to investigate whether increasing the number of mixture components could improve the classification accuracy. By allowing more components, the model may better capture subtle variations in the spectral indices caused by vegetation changes and soil exposure, thus enhancing the distinction between landslide-affected and unaffected areas. This approach aimed to overcome the limitations of traditional threshold-based methods by providing a more flexible, data-driven means of identifying landslide scars without requiring prior knowledge of the local environment.
+
 ![Image Alt]()
 * *
 
-### Gaussian Mixture Models (GMM)
+![Image Alt]()
+* *
 
 ## Performance Analysis
 
