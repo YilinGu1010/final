@@ -104,8 +104,11 @@ K-means clustering is a widely used unsupervised machine learning algorithm desi
 
 In this project, K-means clustering was employed to distinguish landslide-affected areas from unaffected regions using NDVI and BSI indices calculated from Sentinel-2 images captured before and after the earthquake. Two different clustering scenarios were explored: one with two clusters and another with three clusters. The purpose of testing these scenarios was to evaluate if introducing an additional cluster could enhance the classification accuracy, especially by minimizing the errors where vegetation with variable reflectance might be mistakenly classified as bare soil.
 
+![Image Alt](https://github.com/YilinGu1010/final/blob/20db79bb2a233bdb50793147564d901224bcf002/K-Mean2.png)
+* *
+  
 ![Image Alt]()
-![Image Alt]()
+* *
 
 ### Gaussian Mixture Models (GMM)
 
