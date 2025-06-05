@@ -80,7 +80,7 @@ We can use the code above to download the file. The downloaded file will be in Z
 
 The Sentinel-2 images in this study were not perfectly aligned, especially between the before and after earthquake scenes. To ensure accurate pixel-by-pixel comparison, we corrected this misalignment using Enhanced Correlation Coefficient (ECC) alignment (Evangelidis & Psarakis, 2008), aligning the post-earthquake image to the pre-earthquake one. The result of this alignment is shown below:
 
-![Image Alt]()
+![Image Alt](https://github.com/YilinGu1010/final/blob/d8ba6b55ff5b95f64a08a4c460962ce15844505c/pre.png)
 
 ## Normalised Difference Vegetation Index (NDVI) Mask
 
