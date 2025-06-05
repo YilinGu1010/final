@@ -85,6 +85,10 @@ The Sentinel-2 images in this study were not perfectly aligned, especially betwe
 
 ## Normalised Difference Vegetation Index (NDVI) Mask
 
+Following the alignment of the pre- and post-earthquake images, a ground truth dataset was established by applying a conventional threshold-based approach using the Normalized Difference Vegetation Index (NDVI). Specifically, regions where the NDVI value dropped by more than 0.2—signifying significant vegetation loss—were detected and subsequently used to create a mask representing the landslide scars. This mask serves as a reference for evaluating the accuracy of landslide detection methods in the study.
+
+
+
 ## Unsupervised Learning
 
 ### Bare Soil Index (BSI)
